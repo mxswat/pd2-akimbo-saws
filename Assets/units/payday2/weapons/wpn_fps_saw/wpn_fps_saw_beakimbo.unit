@@ -7,7 +7,6 @@
 		<extension name="unit_data" class="ScriptUnitData" /> 
 			<extension name="base" class="AkimboWeaponBase" > 
 			<var name="name_id" value="saw_beakimbo" /> 
-			<var name="class_alt" value="AkimboWeaponBase" />
 		</extension> 
 	</extensions> 
 </unit> 
