@@ -11,7 +11,7 @@
 		<hook file="akimboweaponbase.lua" source_file="lib/units/weapons/akimboweaponbase"/>
 	</Hooks>
 	<WeaponNew>
-		<weapon id="saw_beakimbo" based_on="saw" weapon_hold="x_akmsu" name_id="bm_saw_beakimbo_name" desc_id ="bm_saw_beakimbo_desc" description_id="bm_saw_beakimbo_desc_long" CLIP_AMMO_MAX="300" NR_CLIPS_MAX="600" AMMO_MAX="600" texture_bundle_folder="payday2">
+		<weapon id="saw_beakimbo" based_on="saw" weapon_hold="x_akmsu" name_id="bm_saw_beakimbo_name" desc_id ="bm_saw_beakimbo_desc" description_id="bm_saw_beakimbo_desc_long" CLIP_AMMO_MAX="600" NR_CLIPS_MAX="4" AMMO_MAX="1800" texture_bundle_folder="payday2">
 			<use_data selection_index="2"/>
 			<categories>
 				<value_node value="saw"/>
