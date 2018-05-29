@@ -47,5 +47,7 @@
 	<Hooks directory="hooks">
 		<hook file="menusawweaponbase.lua" source_file="lib/units/weapons/menusawweaponbase"/>
 		<hook file="akimboweaponbase.lua" source_file="lib/units/weapons/akimboweaponbase"/>
+        <hook file="sawweaponbase.lua" source_file="lib/units/weapons/sawweaponbase"/>
+        
 	</Hooks>
 </table>
