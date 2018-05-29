@@ -1,0 +1,1 @@
+NPCAkimboSawWeaponBase = NPCAkimboSawWeaponBase or class(AkimboWeaponBase)
