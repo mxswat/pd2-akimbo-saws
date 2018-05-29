@@ -156,8 +156,6 @@ function AkimboSawWeaponBase:create_second_gun(create_second_gun)
 	AkimboWeaponBase.create_second_gun(self, create_second_gun)
 end
 
-NPCAkimboSawWeaponBase = NPCAkimboSawWeaponBase or class(AkimboWeaponBase)
-
 -- Bulldozer Saw Fix --
 function SawHit:on_collision(col_ray, weapon_unit, user_unit, damage, isAkimbo)
 	local hit_unit = col_ray.unit
