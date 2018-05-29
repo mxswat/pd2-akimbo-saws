@@ -1,5 +1,5 @@
 {
-	"bm_w_saw_akimbo" : "Akimbo OVE9000",
+	"bm_w_saw_akimbo" : "Akimbo OVE9000 Saws",
     "menu_l_global_value_akimbo_ove9k" : "Predator Sawz"
 }
 }
