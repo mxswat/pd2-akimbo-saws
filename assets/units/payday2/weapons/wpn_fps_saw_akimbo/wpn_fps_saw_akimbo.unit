@@ -2,11 +2,13 @@
 	<object file="units/payday2/weapons/wpn_fps_saw/wpn_fps_saw" />
 	<dependencies>
 		<depends_on bnk="soundbanks/weapon_saw_handheld"/>
+		<!--<depends_on effect="effects/particles/equipment/apartment_saw/saw_active" />-->
+		<!-- <depends_on bnk="soundbanks/weapon_saw_handheld" /> -->
 	</dependencies>
 	<extensions>
 		<extension class="ScriptUnitData" name="unit_data" />
-		<extension name="base" class="AkimboWeaponBase" >
-			<var name="name_id" value="saw_beakimbo" />
+		<extension name="base" class="AkimboSawWeaponBase" >
+			<var name="name_id" value="saw_akimbo" />
 		</extension>
 	</extensions>
 	<sounds>

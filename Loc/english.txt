@@ -1,5 +1,0 @@
-{
-	"bm_saw_beakimbo_name":"[AB] SAW",
-	"bm_saw_beakimbo_desc_long":" ",
-	"bm_saw_beakimbo_desc":"akimbooooooooooooooooooooo"
-}
