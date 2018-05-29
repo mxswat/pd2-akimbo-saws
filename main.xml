@@ -6,7 +6,7 @@
 	
 	<Weapon>
 		<weapon id="saw_akimbo" based_on="saw" global_value="akimbo_ove9k" weapon_hold="x_coal" use_stance="x_coal" CLIP_AMMO_MAX="600" NR_CLIPS_MAX="4" AMMO_MAX="2400"  texture_bundle_folder="mods">
-            <stats damage="46" suppression="43" concealment="4"/>
+            <stats damage="46" suppression="1" concealment="4"/>
         	<animations reload_name_id="x_coal" equip_id="equip_x_coal" recoil_steelsight="true" reload="reload_not_empty"/>
             <use_data selection_index="2"/>
             <categories>

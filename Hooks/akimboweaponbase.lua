@@ -41,7 +41,7 @@ function SawWeaponBase:_fire_raycast(user_unit, from_pos, direction, dmg_mul, sh
 		end
 
 		for i, hit in pairs(hits) do
-			hit_unit = SawHit:on_collision(hit, self._unit, user_unit, damage, direction)
+			hit_unit = SawHit:on_collision(hit, self._unit, user_unit, damage, direction, true)
 		end
 
 		valid_hit = #col_ray > 0
@@ -49,7 +49,7 @@ function SawWeaponBase:_fire_raycast(user_unit, from_pos, direction, dmg_mul, sh
 		col_ray = World:raycast("ray", from_pos, mvec_to, "slot_mask", self._bullet_slotmask, "ignore_unit", self._setup.ignore_units, "ray_type", "body bullet lock")
 
 		if col_ray then
-			hit_unit = SawHit:on_collision(col_ray, self._unit, user_unit, damage, direction)
+			hit_unit = SawHit:on_collision(col_ray, self._unit, user_unit, damage, direction, true)
 			valid_hit = true
 		end
 	end
