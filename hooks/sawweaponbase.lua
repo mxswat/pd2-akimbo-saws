@@ -10,6 +10,30 @@ function AkimboSawWeaponBase:init(...)
 	self._fire_callbacks = {}
 end
 
+local function ray_table_contains(table, unit)
+	for i, hit in pairs(table) do
+		if hit.unit == unit then
+			return true
+		end
+	end
+
+	return false
+end
+
+local function ray_copy(table, ray)
+	for i, hit in pairs(table) do
+		if hit.unit == ray.unit then
+			hit.body = ray.body
+			hit.distance = ray.distance
+
+			mvector3.set(hit.hit_position, ray.hit_position)
+			mvector3.set(hit.normal, ray.normal)
+			mvector3.set(hit.position, ray.position)
+			mvector3.set(hit.ray, ray.ray)
+		end
+	end
+end
+
 local mvec_to = Vector3()
 local mvec_spread_direction = Vector3()
 function SawWeaponBase:_fire_raycast(user_unit, from_pos, direction, dmg_mul, shoot_player, spread_mul, autohit_mul, suppr_mul)

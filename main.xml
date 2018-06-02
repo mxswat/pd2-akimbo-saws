@@ -1,5 +1,5 @@
 <table name="Akimbo Saw">
-	<AssetUpdates id="22701" version="1.11" provider="modworkshop" use_local_dir="true" use_local_path="true"/>
+	<AssetUpdates id="22701" version="1.12" provider="modworkshop" use_local_dir="true" use_local_path="true"/>
 	<Localization directory="localization" default="english.txt"/>
 
 	<GlobalValue id="akimbo_ove9k" color="Color(0, 255, 0)"/>
