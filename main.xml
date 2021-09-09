@@ -38,11 +38,52 @@
 		</factory>
 		<stance/>
 	</Weapon>
+
+	<Weapon>
+		<weapon id="saw_akimbo_secondary" based_on="saw" global_value="akimbo_ove9k" weapon_hold="x_coal" use_stance="x_coal" CLIP_AMMO_MAX="600" NR_CLIPS_MAX="4" AMMO_MAX="2400"  texture_bundle_folder="mods" parent_weapon_id="saw">
+			<stats damage="46" suppression="1" concealment="4"/>
+			<animations reload_name_id="x_coal" equip_id="equip_x_coal" recoil_steelsight="true" reload="reload_not_empty"/>
+			<use_data selection_index="1"/>
+			<categories>
+				<value_node value="saw"/>
+				<value_node value="akimbo"/>
+			</categories>
+			<stats/>
+			<stats_modifiers/>
+		</weapon>
+		<factory id="wpn_fps_saw_akimbo_secondary" unit="units/payday2/weapons/wpn_fps_saw_akimbo_secondary/wpn_fps_saw_akimbo_secondary">
+			<default_blueprint>
+				<value_node value="wpn_fps_saw_b_normal"/>
+				<value_node value="wpn_fps_saw_body_standard"/>
+				<value_node value="wpn_fps_saw_m_blade"/>
+			</default_blueprint>
+			<uses_parts>				
+				<value_node value="wpn_fps_saw_b_normal"/>
+				<value_node value="wpn_fps_saw_body_standard"/>
+				<value_node value="wpn_fps_saw_m_blade"/>
+				<value_node value="wpn_fps_saw_body_silent"/>
+				<value_node value="wpn_fps_saw_body_speed"/>
+				<value_node value="wpn_fps_saw_m_blade_durable"/>
+				<value_node value="wpn_fps_saw_m_blade_sharp"/>   
+				<value_node value="wpn_fps_upg_bonus_damage_p1"/>
+				<value_node value="wpn_fps_upg_bonus_damage_p2"/>
+				<value_node value="wpn_fps_upg_bonus_total_ammo_p3"/>
+			</uses_parts>
+		</factory>
+		<stance/>
+	</Weapon>
+
+
 	<AddFiles directory="assets">
 		<unit path="units/payday2/weapons/wpn_fps_saw_akimbo/wpn_fps_saw_akimbo"/>
 		<unit path="units/payday2/weapons/wpn_fps_saw_akimbo/wpn_fps_saw_akimbo_npc"/>
 
 		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/saw_akimbo"/>
+		
+		<unit path="units/payday2/weapons/wpn_fps_saw_akimbo_secondary/wpn_fps_saw_akimbo_secondary"/>
+		<unit path="units/payday2/weapons/wpn_fps_saw_akimbo_secondary/wpn_fps_saw_akimbo_secondary_npc"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/saw_akimbo_secondary"/>
 	</AddFiles>
 	<Hooks directory="hooks">
 		<hook file="menusawweaponbase.lua" source_file="lib/units/weapons/menusawweaponbase"/>
